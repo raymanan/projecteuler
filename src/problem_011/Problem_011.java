@@ -22,9 +22,6 @@ public class Problem_011 {
 	  long rightSum = getRightProduct(currentCells);
 	  long downDum = getDownProduct(currentCells);
 	  long rightDiagonallySum = getRightDiagonallyProduct(currentCells);
-	  if (rightDiagonallySum == 1788696) {
-		int ii = 0;
-	  }
 	  long leftDiagonallySum = getLeftDiagonallyProduct(currentCells);
 	  if (rightSum > largest) {
 		largest = rightSum;
