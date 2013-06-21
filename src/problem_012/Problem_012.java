@@ -19,6 +19,7 @@ public class Problem_012 {
 	  divisors = getCountOfDivisors_2(n * (n + 1) / 2);
 	}
 
+	
 	return n * (n + 1) / 2;
   }
 
