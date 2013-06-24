@@ -1,6 +1,5 @@
 package problem_012;
 
-import util.Util;
 
 public class Problem_012 {
   public static void main(String[] args) {
@@ -40,36 +39,4 @@ public class Problem_012 {
 
 	return countOfDivistors;
   }
-
-  private static int getCountOfDivisors(long number) {
-	Long[] primeFactors = Util.getPrimeFactors(number);
-	int countOfDivistors = 1;
-	boolean dup = false;
-
-	if (primeFactors.length == 0) {
-	  return 1;
-	} else if (primeFactors.length == 1) {
-	  return 2;
-	} else {
-	  countOfDivistors = countOfDivistors + 2;
-	}
-
-	for (int i = 1; i < primeFactors.length; i++) {
-	  if (primeFactors[i] == primeFactors[i - 1]) {
-		if (!dup && primeFactors[i] * primeFactors[i] < number) {
-		  countOfDivistors++;
-		  dup = true;
-		}
-	  } else {
-		countOfDivistors++;
-		dup = false;
-		if (primeFactors[i] * primeFactors[i - 1] < number) {
-		  countOfDivistors++;
-		}
-	  }
-	}
-
-	return countOfDivistors;
-  }
-
 }
