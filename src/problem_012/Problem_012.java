@@ -6,7 +6,7 @@ public class Problem_012 {
   public static void main(String[] args) {
 	long beginTime = System.currentTimeMillis();
 
-	System.out.println(highlyDivisibleTriangularNumber(50));
+	System.out.println(highlyDivisibleTriangularNumber(500));
 
 	System.out.println("interval: " + (System.currentTimeMillis() - beginTime));
   }
@@ -27,10 +27,14 @@ public class Problem_012 {
 	  return 1;
 	}
 	int countOfDivistors = 0;
-	for (int i = 1; i <= number / 2; i++) {
+	for (int i = 1; i <= Math.sqrt(number); i++) {
+	  long n = number / i;
 	  if (number % i == 0) {
-		countOfDivistors = countOfDivistors + 2;
-		number = number / i;
+		if (n * n == number) {
+		  countOfDivistors = countOfDivistors++;
+		} else {
+		  countOfDivistors = countOfDivistors + 2;
+		}
 	  }
 	}
 
