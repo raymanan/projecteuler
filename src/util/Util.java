@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Util {
+  public static void main(String[] args) {
+	System.out.printf("0.1 + 0.2 = %.17f\n", 0.1 + 0.2);
+  }
+
   public static boolean isPrime(long n) {
 	if (n <= 1)
 	  return false;

@@ -1,6 +1,5 @@
 package problem_012;
 
-
 public class Problem_012 {
   public static void main(String[] args) {
 	long beginTime = System.currentTimeMillis();
