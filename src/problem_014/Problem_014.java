@@ -9,7 +9,8 @@ public class Problem_014 {
 
 	System.out.println(longestCollatzSequence(1000000));
 
-	System.out.println("interval: " + (System.currentTimeMillis() - beginTime));
+	System.out.println("interval: " + (System.currentTimeMillis() - beginTime)
+	                   / 1000 + "s");
   }
 
   private static long longestCollatzSequence(long count) {
