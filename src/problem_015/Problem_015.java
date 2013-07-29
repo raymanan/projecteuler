@@ -1,5 +1,6 @@
 package problem_015;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Problem_015 {
@@ -32,5 +33,18 @@ public class Problem_015 {
 	}
 
 	return grid;
+  }
+  
+  private static Tree generateTree(int count){
+	List<Node> nodes=new ArrayList<Node>();
+	Tree tree=new Tree();
+	tree.setNodes(nodes);
+	
+	for (int i = 0; i < count; i++) {
+	  Node node=new Node();
+	  Point point=new Point(, y)
+    }
+	
+	return tree;
   }
 }
