@@ -3,7 +3,9 @@ package problem_014;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem_014 {
+import util.Problem;
+
+public class Problem_014 implements Problem{
   public static void main(String[] args) {
     long beginTime = System.currentTimeMillis();
 
@@ -43,5 +45,11 @@ public class Problem_014 {
     }
 
     return (Long[]) seq.toArray(new Long[seq.size()]);
+  }
+
+  @Override
+  public String run() {
+    // TODO Auto-generated method stub
+    return null;
   }
 }
